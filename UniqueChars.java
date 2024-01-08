@@ -11,7 +11,19 @@ public class UniqueChars {
      * unless they are space characters.
      */
     public static String uniqueChars(String s) {
-        // Replace the following statement with your code
-        return null;
+        String withoutDup = "" + s.charAt(0);
+
+        for (int i = 1; i < s.length(); i++) {
+            char currentChar = s.charAt(i);
+
+            // Check if the current character is already in the result string
+            if (withoutDup.indexOf(currentChar) == -1 || (currentChar == ' ')) {
+                withoutDup += currentChar;
+            }
+        }
+
+        return withoutDup;
     }
+
+
 }
