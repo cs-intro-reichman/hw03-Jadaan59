@@ -1,5 +1,5 @@
 /** 
- * Prints the calendars of all the years in the 20th century.
+ * Prints the calendars of  the requisted year.
  */
 public class Calendar {
     // Starting the calendar on 1/1/1900
@@ -22,7 +22,7 @@ public class Calendar {
 			for (month = 1; month <= 12; month++) { // Runs 12 times for months
 				for (dayOfMonth = 1; dayOfMonth <= nDaysInMonth(month, NewYear); dayOfMonth++) {// Runs as the days in month.
 					if (dayOfWeek == 0) {
-					System.out.println(dayOfMonth + "/" + month + "/" + NewYear + " sunday");
+					System.out.println(dayOfMonth + "/" + month + "/" + NewYear + " Sunday");
 						dayOfWeek = ((dayOfWeek + 1) % 7);
 					}else {
 						System.out.println(dayOfMonth + "/" + month + "/" + NewYear);
